@@ -6,7 +6,7 @@ resource "aws_eks_node_group" "eksnode" {
   cluster_name    = var.eks_cluster
   node_group_name = "eksnodegroup"
   node_role_arn   = aws_iam_role.eksnoderole.arn
-  subnet_ids      = ["subnet-00f882502a1585aed", "subnet-0f7dd8c02c7b3701f"]
+  subnet_ids      = ["subnet-62c32548", "subnet-9fcc53e7"]
 
   scaling_config {
     desired_size = 2
