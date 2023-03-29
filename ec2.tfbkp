@@ -1,0 +1,9 @@
+module "ec2-instanc-vpc"{
+    source = "./modules/vpc"
+}
+module "ec2-instanc"{
+    source = "./modules/ec2"
+    image_id = var.image_id
+    env      = var.env
+    instance_type = var.instance_type
+}
